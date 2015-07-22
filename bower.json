@@ -1,0 +1,21 @@
+{
+  "name": "etsy-project",
+  "version": "0.0.0",
+  "homepage": "https://github.com/awilli1186/Etsy-project",
+  "authors": [
+    "Adam Williams <awilli1186@gmail.com>"
+  ],
+  "description": "Iron yard group project to demonstrate work flow as well how to use ajax requests and underscore.js templetes",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
