@@ -27,9 +27,117 @@
 
             <section class="categories">
 
+              <h5>Show results for:</h5>
+
+                <ul>
+                  <li>
+                    <a href="https://www.etsy.com"><span>All Categories</span></a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Home &amp; Living</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Accessories</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Weddings</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Bags &amp; Purses</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Art &amp; Collectibles</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Paper &amp; Party Supplies</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Craft Supplies &amp; Tools</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Jewelry</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Bath &amp; Beauty</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Pet Supplies</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Electronics &amp; Accessories</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Toys &amp; Games</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Clothing</a>
+                  </li>
+                  <li>
+                    <a href="https://www.etsy.com">Books, Movies &amp; Music</a>
+                  </li>
+
+                </ul>
             </section>
 
             <section class="refine">
+
+              <h5>Refine your search</h5>
+
+              <form>
+                <div class="type">
+
+                  <h5>Item Type</h5>
+                  <input type="radio" name="Item Type" value="All Items">All Items<br>
+                  <input type="radio" name="Item Type" value="Handmade">Handmade<br>
+                  <input type="radio" name="Item Type" value="Vintage">Vintage
+                </div>
+
+                <div class="class">
+                  <input type="text" name="low" placeholder="Low" value=""> to <!--add $ in field -->
+                  <input type="text" name="low" placeholder="High" value="">
+                  <input type="submit" name="name" value=""> <!-- add arrow  -->
+                </div>
+
+                <div class="colorFilter">
+                  <h5>Filter by Color</h5>
+                  <ul class="swatch">
+                    <li><a href="https://www.etsy.com" title="View only red items"><canvas id="canvas1" width="22px" height="22px"></canvas></a></li>
+                    <li><a href="https://www.etsy.com" title="View only orange items"><canvas id="canvas2" width="22px" height="22px"></canvas></a></li>
+                    <li><a href="https://www.etsy.com" title="View only yellow items"><canvas id="canvas3" width="22px" height="22px"></canvas></a></li>
+                    <li><a href="https://www.etsy.com" title="View only green items"><canvas id="canvas4" width="22px" height="22px"></canvas></a></li>
+                    <li><a href="https://www.etsy.com" title="View only blue items"><canvas id="canvas5" width="22px" height="22px"></canvas></a></li>
+                    <li><a href="https://www.etsy.com" title="View only purple items"><canvas id="canvas6" width="22px" height="22px"></canvas></a></li>
+                    <li><a href="https://www.etsy.com" title="View only black items"><canvas id="canvas7" width="22px" height="22px"></canvas></a></li>
+                    <li><a href="https://www.etsy.com" title="View only white items"><canvas id="canvas8" width="22px" height="22px"></canvas></a></li>
+                  </ul>
+                </div>
+
+                <div class="ordering">
+                  <h5>Ordering Options</h5>
+                    <input type="checkbox"  value="giftcards">Accepts Etsy Gift Cards<br>
+                    <input type="checkbox"  value="Customizable">Customizable
+                </div>
+
+                <div class="location">
+                  <h5>Shop Location</h5>
+                  <input type="radio" value="Anywhere">Anywhere <br>
+                  <input type="radio" value="United States">United States <br>
+                  <a href="https://www.etsy.com">Choose a custom location</a>
+                </div>
+
+                <div class="shipTo">
+                  <h5>Ship To</h5>
+                  <select class="select-custom" name="ship_to">
+                    <option> United States</option>
+                    <option> United Kingdom</option>
+                    <option> Canada</option>
+                    <option> Mexico</option>
+                    <option> France</option>
+                    <option> Spain</option>
+                  </select>
+                </div>
+
+              </form>
 
             </section>
 
@@ -38,19 +146,33 @@
         <div class="content">
 
             <section class="sortBar">
+              <div class="float-left">
+              <a href="#"><h5>All Categories</h5></a>
+              <!--add in right arrow icon here-->
+
+              </div>
+
+              <div class="float-right">
+                <h5>Sort By:</h5><a href="#"><h5>Relevancy</h5></a>
+                <!--add in down arrow icon here-->
+              </div>
 
             </section>
 
             <section class="items">
-
+                <!--this is where the items will be listed-->
             </section>
+
+            <div class="related">
+              <!--not sure if this is apart of the api or not-->
+            </div>
 
         </div>
 
       </main>
 
       <footer>
-      
+
       </footer>
 
     <script src="main.js"></script>
