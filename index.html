@@ -53,6 +53,7 @@
       </header>
 
       <main>
+
         <aside class="sideBar">
 
 
@@ -132,8 +133,8 @@
                 <div class="colorFilter">
                   <h5>Filter by Color</h5>
                   <ul class="swatch">
-                    <li><a href="https://www.etsy.com" title="View only red items"><canvas id="canvas1" width="22px" height="22px"></canvas></a></li>
-                    <li><a href="https://www.etsy.com" title="View only orange items"><canvas id="canvas2" width="22px" height="22px"></canvas></a></li>
+                    <li><a href="https://www.etsy.com" title="View only red items"></a></li>
+                    <li><a href="https://www.etsy.com" title="View only orange items"></a></li>
                     <li><a href="https://www.etsy.com" title="View only yellow items"><canvas id="canvas3" width="22px" height="22px"></canvas></a></li>
                     <li><a href="https://www.etsy.com" title="View only green items"><canvas id="canvas4" width="22px" height="22px"></canvas></a></li>
                     <li><a href="https://www.etsy.com" title="View only blue items"><canvas id="canvas5" width="22px" height="22px"></canvas></a></li>
@@ -174,31 +175,16 @@
 
         </aside>
 
-        <div class="content">
+        <script type="text/template" id="contentItems">
 
-            <section class="sortBar">
-              <div class="float-left">
-              <a href="#"><h5>All Categories</h5></a>
-              <!--add in right arrow icon here-->
+          <div class="content">
+            <p>
+              <%- title %>
+              <h1>hi yo</h1>
+            </p>
+          </div>
 
-              </div>
-
-              <div class="float-right">
-                <h5>Sort By:</h5><a href="#"><h5>Relevancy</h5></a>
-                <!--add in down arrow icon here-->
-              </div>
-
-            </section>
-
-            <section class="items">
-                <!--this is where the items will be listed-->
-            </section>
-
-            <div class="related">
-              <!--not sure if this is apart of the api or not-->
-            </div>
-
-        </div>
+        </script>
 
       </main>
 
@@ -280,8 +266,8 @@
 
       </footer>
 
-    <script src="main.js"></script>
-    <script src="bower_components/Jquery/dist/Jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
