@@ -28,6 +28,13 @@ var buildContent = function(listings){
       image = image.url_170x135;
   var imageUrl = listings.url;
   var title = listings.title;
+  var subTitle = function(){
+    if (title.length > 28){
+      return title.substring(0,28) + '...';
+    } else {
+      return title;
+    }
+  };
   var titleUrl = listings.url;
   var shop = listings.Shop.shop_name;
   var shopUrl = listings.Shop.url;
@@ -38,7 +45,7 @@ var buildContent = function(listings){
   var output = template({
       image: image,
       imageUrl: imageUrl,
-      title: title,
+      subTitle: subTitle,
       titleUrl: titleUrl,
       shop: shop,
       shopUrl: shopUrl,
