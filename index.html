@@ -47,13 +47,11 @@
   </header>
   <main class="main">
         <aside class="sideBar">
-            <section class="categories">
-              <h5>Show results for:</h5>
+          <h5>Show results for:</h5>
 
+            <section class="categories">
+                <a href="https://www.etsy.com"><h6>All Categories</h6></a>
                 <ul>
-                  <li>
-                    <a href="https://www.etsy.com"><span>All Categories</span></a>
-                  </li>
                   <li>
                     <a href="https://www.etsy.com">Home &amp; Living</a>
                   </li>
@@ -100,9 +98,9 @@
                 </ul>
             </section>
 
-            <section class="refine">
-
               <h5>Refine your search</h5>
+
+            <section class="refine">
 
               <form>
                 <div class="type">
@@ -113,23 +111,25 @@
                   <input type="radio" name="Item Type" value="Vintage">Vintage
                 </div>
 
-                <div class="class">
-                  <input type="text" name="low" placeholder="Low" value=""> to <!--add $ in field -->
+
+                <div class="cash">
+                  <h5 id="price">Price</h5>
+                  <input type="text" name="low" placeholder="Low" value=""> to  <span>$</span><!--add $ in field -->
                   <input type="text" name="low" placeholder="High" value="">
-                  <input type="submit" name="name" value=""> <!-- add arrow  -->
+                  <input type="submit" name="name" value="&#9654" id="submit"> <!-- add arrow  -->
                 </div>
 
                 <div class="colorFilter">
                   <h5>Filter by Color</h5>
                   <ul class="swatch">
-                    <li><a href="https://www.etsy.com" title="View only red items"></a></li>
-                    <li><a href="https://www.etsy.com" title="View only orange items"></a></li>
-                    <li><a href="https://www.etsy.com" title="View only yellow items"><canvas id="canvas3" width="22px" height="22px"></canvas></a></li>
-                    <li><a href="https://www.etsy.com" title="View only green items"><canvas id="canvas4" width="22px" height="22px"></canvas></a></li>
-                    <li><a href="https://www.etsy.com" title="View only blue items"><canvas id="canvas5" width="22px" height="22px"></canvas></a></li>
-                    <li><a href="https://www.etsy.com" title="View only purple items"><canvas id="canvas6" width="22px" height="22px"></canvas></a></li>
-                    <li><a href="https://www.etsy.com" title="View only black items"><canvas id="canvas7" width="22px" height="22px"></canvas></a></li>
-                    <li><a href="https://www.etsy.com" title="View only white items"><canvas id="canvas8" width="22px" height="22px"></canvas></a></li>
+                    <li><a href="https://www.etsy.com" title="View only red items" id="red"></a></li>
+                    <li><a href="https://www.etsy.com" title="View only orange items" id="orange"></a></li>
+                    <li><a href="https://www.etsy.com" title="View only yellow items" id="yellow"></a></li>
+                    <li><a href="https://www.etsy.com" title="View only green items" id="green"></a></li>
+                    <li><a href="https://www.etsy.com" title="View only blue items" id="blue"></a></li>
+                    <li><a href="https://www.etsy.com" title="View only purple items" id="purple"></a></li>
+                    <li><a href="https://www.etsy.com" title="View only black items" id="black"></a></li>
+                    <li><a href="https://www.etsy.com" title="View only white items" id="white"></a></li>
                   </ul>
                 </div>
 
@@ -148,13 +148,7 @@
 
                 <div class="shipTo">
                   <h5>Ship To</h5>
-                  <select class="select-custom" name="ship_to">
-                    <option> United States</option>
-                    <option> United Kingdom</option>
-                    <option> Canada</option>
-                    <option> Mexico</option>
-                    <option> France</option>
-                    <option> Spain</option>
+                  <input type="button" name="name" value="United States"><span>&#9660</span>
                   </select>
                 </div>
 
@@ -166,7 +160,7 @@
 
           <div class="sortBar">
             <ul>
-              <li><a href="#">All Categories</a></li>
+              <li><a href="#">All Categories </a>></li>
               <li>"bill murray"</li>
               <li>(1,950 Results)</li>
             </ul>
@@ -206,7 +200,7 @@
           <div class ='result'>
 
             <a href='<%= imageUrl %>'><img src=<%=image %> /></a>
-            <a href='<%= titleUrl %>'><h5><%= title %></h5></a>
+            <a href='<%= titleUrl %>'><h5><%- subTitle() %></h5></a>
             <a href='<%= shopUrl %>'> <p><%= shop %></p></a>
             <ul>
               <li>$<%= price %></li>
