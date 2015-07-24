@@ -52,7 +52,7 @@
 
       </header>
 
-      <main>
+      <main class="main">
 
         <aside class="sideBar">
 
@@ -175,13 +175,54 @@
 
         </aside>
 
-        <script type="text/template" id="contentItems">
+          <div class="sortBar">
+            <ul>
+              <li><a href="#">All Categories</a></li>
+              <li>"bill murray"</li>
+              <li>(1,950 Results)</li>
+            </ul>
+
+            <ul>
+              <li>Sort By:</li>
+              <li><a href="#">Relevancy</a></li>
+            </ul>
+
+          </div>
 
           <div class="content">
-            <p>
-              <%- title %>
-              <h1>hi yo</h1>
-            </p>
+
+          </div>
+
+          <div class="relatedSearch">
+            <h5>Related to bill murray</h5>
+
+          <ul>
+            <li><a href="#">bill murray shirt</a></li>
+            <li><a href="#">wes anderson</a></li>
+            <li><a href="#">bill murray art</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">ghostbusters</a></li>
+            <li><a href="#">bill murray sticker</a></li>
+            <li><a href="#">what about bob</a></li>
+          </ul>
+
+          <h5>Looking for this shop? <a href="#">OhKaeArtsy.</a></h5>
+
+          </div>
+
+        <script type="text/template" id="contentItems">
+
+          <div class ='result'>
+
+            <a href='<%= imageUrl %>'><img src=<%=image %> /></a>
+            <a href='<%= titleUrl %>'><h5><%= title %></h5></a>
+            <a href='<%= shopUrl %>'> <p><%= shop %></p></a>
+            <ul>
+              <li>$<%= price %></li>
+              <li><%= currency %></li>
+            </ul>
           </div>
 
         </script>

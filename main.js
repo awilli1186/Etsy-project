@@ -6,7 +6,7 @@ $.ajax(itemURL, {
   method: 'GET',
 
   error: function(error){
-
+    alert('oops we have a problem!');
   },
   success: function(data, textStatus, xhr){
     buildAllItems(data.results);
@@ -19,19 +19,31 @@ var buildAllItems = function(listings){
     return html + item;
   });
 
-  $('.main').html(html);
+  $('.content').html(html);
 };
 
 
 var buildContent = function(listings){
+  var image = _.first(listings.Images);
+      image = image.url_170x135;
+  var imageUrl = listings.url;
   var title = listings.title;
+  var titleUrl = listings.url;
+  var shop = listings.Shop.shop_name;
+  var shopUrl = listings.Shop.url;
+  var price = listings.price;
+  var currency = listings.currency_code;
   var templateHtml = $('#contentItems').html();
   var template = _.template(templateHtml);
   var output = template({
-      // url: url,
+      image: image,
+      imageUrl: imageUrl,
       title: title,
-      // description: description,
-
+      titleUrl: titleUrl,
+      shop: shop,
+      shopUrl: shopUrl,
+      price: price,
+      currency: currency,
     });
 
     return output;
