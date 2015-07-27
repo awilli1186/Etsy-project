@@ -72,12 +72,15 @@ header {
       .btn {
         color: #666666;
         line-height: 18px;
+          &:hover {
+            background-color: #C8ECF1;
 
         i {
           margin-left: 15px;
           color: #bbb;
         }
       }
+    }
   }
 
   .account {
