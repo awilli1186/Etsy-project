@@ -1,0 +1,25 @@
+{
+  "name": "etsy-project",
+  "version": "1.0.0",
+  "description": "etsy api/underscore.js template project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awilli1186/Etsy-project.git"
+  },
+  "author": "Adam Williams & Bryce Bennett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/awilli1186/Etsy-project/issues"
+  },
+  "homepage": "https://github.com/awilli1186/Etsy-project#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-jscs": "^1.6.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
