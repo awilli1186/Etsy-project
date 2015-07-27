@@ -1,5 +1,6 @@
 main {
   @include outer-container;
+  border-bottom:1px solid #E0E4DF;
 
   .sideBar {
     @include span-columns(2.9);
@@ -18,47 +19,67 @@ main {
       bottom:1.5em;
     }
     .categories {
-      width: 16em;
-      height:420px;
+      width: 16.7em;
+      height:360px;
       background: #FFFFFF;
       border:1px solid #E0E4DF;
       border-radius: 1%;
-      font-size: 14px;
-      padding-right: 3em;
+      font-size: 13px;
+      padding-right: 1em;
+
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       ul {
       list-style-type: none;
       position: relative;
       bottom: 3em;
       right:1em;
+
       li {
         padding-bottom: 5px;
 
       a {
         text-decoration: none;
-        color: #00B1E0;
+        color: #0095C7;
+
+        &:hover {
+          text-decoration: underline;
+        }
         }
       }
     }
   }
     .refine {
-      width: 16em;
-      height:650px;
+      width: 16.7em;
+      height:615px;
       background: #FFFFFF;
       border:1px solid #E0E4DF;
       border-radius: 1%;
-      font-size: 14px;
+      font-size: 13px;
       padding-right: 2em;
       margin: 2em 0 0 0;
       .type {
-        font-size: 15px;
+        font-size: 13px;
         position: relative;
         left:1em;
-        color: #00B1E0;
         padding-bottom: 1em;
         border-bottom:1px solid #E0E4DF;
-
-        input {
-          position: relative;
+        a {
+          text-decoration: none;
+          color: #0095C7;
+          &:hover{
+            text-decoration: underline;
+            }
+          }
+          input[type="radio"] {
+            margin-right: 4px;
+            margin-bottom: .5em;
+          }
         }
       }
 
@@ -70,29 +91,41 @@ main {
         border-bottom: 1px solid #E0E4DF;
         padding-bottom: 1em;
         input {
-          width:4.2em;
-          height:35px;
+          width:5em;
+          height:38px;
+          text-align: center;
         }
         span {
           position: absolute;
           left:.4em;
-          bottom:1.4em;
+          bottom:1.3em;
+          font-size: 17px;
+        }
+        #dollarSign {
+          position: absolute;
+          left:5.3em;
+          bottom:1.3em;
           font-size: 17px;
         }
 
         #submit {
           width:2.5em;
-          height: 41px;
+          height: 38px;
           position: relative;
           background: #FFFFFF;
           border:1px solid #E0E4DF;
+          border-radius: 2%;
+          margin-left: .5em;
+
+          &:hover {
+            background: #F5F5F1;
+          }
         }
       }
       .colorFilter {
         width: auto;
         position: relative;
         bottom: 2em;
-        left:.3em;
         border-bottom:1px solid #E0E4DF;
         h5 {
           left:1em;
@@ -104,7 +137,7 @@ main {
           display:inline-block;
           width:20px;
           height:20px;
-          border:1px solid #E0E4DF;
+          box-shadow: none;
           border-radius: 15%;
           position: relative;
           left:1em;
@@ -112,6 +145,7 @@ main {
             height: inherit;
             width: inherit;
             display: block;
+            border:1px solid #E2E2E2;
           }
           #red {
             background: #FF0000;
@@ -144,24 +178,49 @@ main {
         position: relative;
         left: .5em;
         bottom:2em;
-        color: #00B1E0;
         border-bottom:1px solid #E0E4DF;
         padding-bottom: 1em;
+        font-size: 13px;
+        a { text-decoration: none;
+          color:#0095C7;
+        &:hover {
+          text-decoration: underline;
+          }
+        }
+        input[type="checkbox"] {
+          margin-right: 4px;
+          margin-bottom: .5em;
+        }
       }
       .location {
         position: relative;
         left: .5em;
         bottom:2em;
-        color: #00B1E0;
+        color: #0095C7;
         border-bottom:1px solid #E0E4DF;
         padding-bottom: 1.5em;
+
+        a {
+          text-decoration: none;
+          color: #0095C7;
+          position: relative;
+          top:.5em;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        input[type="radio"] {
+          margin-right: 4px;
+          margin-bottom: .5em;
+        }
       }
       .shipTo {
         position: relative;
         left: .5em;
         bottom:2.5em;
-        color: #00B1E0;
+        color: #0095C7;
         padding-bottom: 1.5em;
+
         input {
           color:black;
           text-align: left;
@@ -169,28 +228,206 @@ main {
           height: 35px;
           background: #FFFFFF;
           border:1px solid #E0E4DF;
+          &:hover {
+            border: 1px solid grey;
+          }
         }
         span {
           position: absolute;
-          bottom:3em;
-          right:2.5em;
+          bottom:3.5em;
+          right:4.5em;
           color: #E0E4DF;
-          font-size: 10px;
+          font-size: 9px;
         }
+      }
+    }
+
+  .sortBar {
+    @include span-columns(8.4);
+    font-size: 13px;
+    position: relative;
+    top:1.3em;
+    #categories{
+      float:left;
+      li {
+        display:inline-block;
+        position: relative;
+        right: 3em;
+        a {
+          text-decoration: none;
+          color: #0095C7;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    #sortBy {
+      float:left;
+      li {
+        display: inline-block;
+        position:relative;
+        left:21em;
+      a {
+        text-decoration: none;
+        color: #0095C7;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
       }
     }
   }
 
 
-
   .content {
     @include span-columns(8.4);
-    // display: none;
-    // width:70%;
-    // float:left;
+    position: relative;
+    top:1.3em;
 
     .result {
       @include span-columns(2.7 of 8.4);
+      height:230px;
+      margin-bottom: 1em;
+      border:1px solid #E0E4DF;
+      border-radius: 1%;
+      background: #FFFFFF;
+      position: relative;
+
+        .hoverBox {
+          display:none;
+        }
+          &:hover {
+          .hoverBox {
+            display: block;
+            margin:0;
+            padding: 0;
+            position: absolute;
+            left: 10em;
+            top:.5em;
+            width: 6em;
+
+          li {
+            display: inline-block;
+            width: 1.5em;
+            height:1.5em;
+            border: 1px solid #E0E4DF;
+            border-radius: 3px;
+            padding-left: 5px;
+            background-color: #FFFFFF;
+            cursor: pointer;
+              i {
+                  color:#B2B2B2;
+                  position: relative;
+                  top:2px;
+                  right: 2px;
+              }
+            }
+          }
+        }
+        }
+
+      img {
+        width: 223px;
+        height:172px;
+      }
+      a {
+        text-decoration: none;
+        color: #555;
+        font-size: 13px;
+        h5 {
+          position: relative;
+          left:.5em;
+          bottom:1em;
+        }
+        p {
+          color:#B7B2B2;
+          float:left;
+          position: relative;
+          left:.5em;
+          bottom:2.5em;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      p {
+        float:right;
+        font-size: 13px;
+        color: #5EC941;
+        position: relative;
+        right:.5em;
+        bottom:2.5em;
+      }
     }
   }
-}
+
+  .relatedSearch {
+    @include span-columns(8.4);
+    position: relative;
+    left: 17em;
+    h5 {
+      color: #555555;
+      font-weight: lighter;
+      span {
+        font-weight: bold;
+      }
+    }
+    ul {
+      list-style-type: none;
+      float:left;
+      position: relative;
+      bottom: 2em;
+      padding-right: 3em;
+
+      li {
+        padding-bottom: 7px;
+      }
+      }
+      a {
+        text-decoration: none;
+        color: #0095C7;
+        font-size: 13px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      h6 {
+        position: relative;
+        right: 52em;
+        top: 3.5em;
+        float:left;
+        font-weight: lighter;
+        a {
+          font-weight: bolder;
+        }
+        }
+
+
+      .pagination {
+        width: 20em;
+        position: relative;
+        left: 9em;
+        bottom: 1em;
+        input {
+          width: 33px;
+          height: 38px;
+          display:inline;
+          float:left;
+          background: #FFFFFF;
+          color: #555555;
+          border: none;
+          padding: 7px 15px 8px;
+          border-top: 1px solid rgba(0, 0, 0, .1);
+          border-bottom: 1px solid rgba(0, 0, 0, .1);
+          border-right: 1px solid rgba(0, 0, 0, .1);
+          font-weight: bold;
+          box-shadow: 0px 1px 1px rgba(128, 128, 128, 0.35);
+          &:hover {
+            background: #E0E4DF;
+          }
+          }
+        }
+      }

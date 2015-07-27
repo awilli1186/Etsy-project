@@ -94,6 +94,9 @@
                   <li>
                     <a href="https://www.etsy.com">Books, Movies &amp; Music</a>
                   </li>
+                  <li>
+                    <a href="https://www.etsy.com">Bath &amp; Beauty</a>
+                  </li>
 
                 </ul>
             </section>
@@ -106,17 +109,17 @@
                 <div class="type">
 
                   <h5>Item Type</h5>
-                  <input type="radio" name="Item Type" value="All Items">All Items<br>
-                  <input type="radio" name="Item Type" value="Handmade">Handmade<br>
-                  <input type="radio" name="Item Type" value="Vintage">Vintage
+                    <a href="#"><input type="radio" name="Item Type" value="All Items">All Items</a><br>
+                    <a href="#"><input type="radio" name="Item Type" value="Handmade">Handmade</a><br>
+                    <a href="#"><input type="radio" name="Item Type" value="Vintage">Vintage</a>
                 </div>
 
 
                 <div class="cash">
                   <h5 id="price">Price</h5>
                   <input type="text" name="low" placeholder="Low" value=""> to  <span>$</span><!--add $ in field -->
-                  <input type="text" name="low" placeholder="High" value="">
-                  <input type="submit" name="name" value="&#9654" id="submit"> <!-- add arrow  -->
+                  <input type="text" name="low" placeholder="High" value=""><span id='dollarSign'>$</span>
+                  <input type="submit" name="name" value="&#9654" id="submit">
                 </div>
 
                 <div class="colorFilter">
@@ -135,14 +138,14 @@
 
                 <div class="ordering">
                   <h5>Ordering Options</h5>
-                    <input type="checkbox"  value="giftcards">Accepts Etsy Gift Cards<br>
-                    <input type="checkbox"  value="Customizable">Customizable
+                    <a href="#"><input type="checkbox"  value="giftcards">Accepts Etsy Gift Cards</a> <br>
+                    <a href="#"><input type="checkbox"  value="Customizable">Customizable</a>
                 </div>
 
                 <div class="location">
                   <h5>Shop Location</h5>
-                  <input type="radio" value="Anywhere">Anywhere <br>
-                  <input type="radio" value="United States">United States <br>
+                    <a href="#"><input type="radio" value="Anywhere">Anywhere</a> <br>
+                    <a href="#"><input type="radio" value="United States">United States</a> <br>
                   <a href="https://www.etsy.com">Choose a custom location</a>
                 </div>
 
@@ -159,13 +162,13 @@
         </aside>
 
           <div class="sortBar">
-            <ul>
+            <ul id="categories">
               <li><a href="#">All Categories </a>></li>
               <li>"bill murray"</li>
               <li>(1,950 Results)</li>
             </ul>
 
-            <ul>
+            <ul id="sortBy">
               <li>Sort By:</li>
               <li><a href="#">Relevancy</a></li>
             </ul>
@@ -177,7 +180,7 @@
           </div>
 
           <div class="relatedSearch">
-            <h5>Related to bill murray</h5>
+            <h5>Related to <span>bill murray</span></h5>
 
           <ul>
             <li><a href="#">bill murray shirt</a></li>
@@ -191,7 +194,46 @@
             <li><a href="#">what about bob</a></li>
           </ul>
 
-          <h5>Looking for this shop? <a href="#">OhKaeArtsy.</a></h5>
+          <ul>
+            <li><a href="#">seinfeld</a></li>
+            <li><a href="#">stars wars</a></li>
+            <li><a href="#">hunter s thompson</a></li>
+          </ul>
+
+          <h6>Looking for this shop? <a href="#">OhKaeArtsy.</a></h6>
+
+
+          <div class="pagination">
+
+                <label>
+                  <input type="button" name="button-group" value="<" checked>
+                </label>
+                <label>
+                  <input type="button" name="button-group" value="1">
+                </label>
+                <label>
+                  <input type="button" name="button-group" value="2">
+                </label>
+                <label>
+                  <input type="button" name="button-group" value="3">
+                </label>
+                <label>
+                  <input type="button" name="button-group" value="4">
+                </label>
+                <label>
+                  <input type="button" name="button-group" value="5">
+                </label>
+                <label>
+                  <input type="button" name="button-group" value="6">
+                </label>
+                <label>
+                  <input type="button" name="button-group" value="7">
+                </label>
+                <label>
+                  <input type="button" name="button-group" value=">">
+                </label>
+
+          </div>
 
           </div>
 
@@ -200,12 +242,16 @@
           <div class ='result'>
 
             <a href='<%= imageUrl %>'><img src=<%=image %> /></a>
+
+            <ul class="hoverBox">
+             <li><i class="fa fa-heart"></i></li>
+             <li><i class="fa fa-bars"></i></li>
+           </ul>
+
             <a href='<%= titleUrl %>'><h5><%- subTitle() %></h5></a>
             <a href='<%= shopUrl %>'> <p><%= shop %></p></a>
-            <ul>
-              <li>$<%= price %></li>
-              <li><%= currency %></li>
-            </ul>
+            <p>$<%= price %> <%= currency %></p>
+
           </div>
 
         </script>

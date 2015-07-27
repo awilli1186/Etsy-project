@@ -22,7 +22,6 @@ var buildAllItems = function(listings){
   $('.content').html(html);
 };
 
-
 var buildContent = function(listings){
   var image = _.first(listings.Images);
       image = image.url_170x135;
