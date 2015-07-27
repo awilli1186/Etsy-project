@@ -159,7 +159,8 @@ main {
         position: relative;
         left: 1em;
         padding-bottom: 1em;
-        border-bottom: 1px solid #E0E4DF; }
+        border-bottom: 1px solid #E0E4DF;
+      text-align: left;}
         main .sideBar .refine .type a {
           text-decoration: none;
           color: #0095C7; }
@@ -244,7 +245,8 @@ main {
       bottom: 2em;
       border-bottom: 1px solid #E0E4DF;
       padding-bottom: 1em;
-      font-size: 13px; }
+      font-size: 13px;
+      text-align: left; }
       main .sideBar .ordering a {
         text-decoration: none;
         color: #0095C7; }
@@ -259,7 +261,8 @@ main {
       bottom: 2em;
       color: #0095C7;
       border-bottom: 1px solid #E0E4DF;
-      padding-bottom: 1.5em; }
+      padding-bottom: 1.5em;
+      text-align: left;}
       main .sideBar .location a {
         text-decoration: none;
         color: #0095C7;
@@ -275,7 +278,8 @@ main {
       left: .5em;
       bottom: 2.5em;
       color: #0095C7;
-      padding-bottom: 1.5em; }
+      padding-bottom: 1.5em;
+      text-align: left;}
       main .sideBar .shipTo input {
         color: black;
         text-align: left;
