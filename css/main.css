@@ -175,7 +175,8 @@ main {
       left: 1em;
       bottom: 25px;
       border-bottom: 1px solid #E0E4DF;
-      padding-bottom: 1em; }
+      padding-bottom: 1em;
+      text-align: left;}
       main .sideBar .cash input {
         width: 5em;
         height: 38px;
