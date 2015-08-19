@@ -11,7 +11,7 @@ header {
     margin: 0 auto;
     overflow: auto;
     height: 100%;
-  }
+
 
   h1 {
     color: orange;
@@ -72,16 +72,15 @@ header {
       .btn {
         color: #666666;
         line-height: 18px;
-          &:hover {
-            background-color: #C8ECF1;
-
         i {
           margin-left: 15px;
           color: #bbb;
         }
+          &:hover {
+            background-color: #C8ECF1;
+          }
       }
     }
-  }
 
   .account {
     float: right;
@@ -108,6 +107,7 @@ header {
         display: block;
         font-size: 20px;
         min-height: 24px;
+        }
       }
     }
   }

@@ -25,77 +25,77 @@ header {
     margin: 0 auto;
     overflow: auto;
     height: 100%; }
-  header h1 {
-    color: orange;
-    font-size: 18px;
-    font-family: sans-serif;
-    float: left;
-    margin: 0;
-    height: 36px;
-    width: 75px;
-    background: url(../img/logo.png) no-repeat;
-    text-indent: -1000em; }
-  header nav {
-    display: block;
-    float: left; }
-  header .search {
-    padding: 0 18px;
-    width: 35%; }
-    header .search form {
-      margin: 0; }
-      header .search form input {
-        border: 1px solid #CFCBC8;
-        background: #f9f9f8;
-        padding: 6px 10px;
-        margin-left: 0;
-        height: 34px;
-        font-size: 14px;
-        float: left; }
-      header .search form input[type="text"] {
-        width: 75%; }
-      header .search form input[type="button"] {
-        width: 25%;
-        border: none;
-        padding: 7px 15px 8px;
-        background: #34A8C4;
-        color: #fff;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        border-right: 1px solid rgba(0, 0, 0, 0.1);
-        font-weight: bold;
-        box-shadow: 0px 1px 1px rgba(128, 128, 128, 0.35); }
-  header .categories ul {
-    display: none; }
-  header .categories .btn {
-    color: #666666;
-    line-height: 18px; }
-    header .categories .btn:hover {
-      background-color: #C8ECF1; }
-      header .categories .btn:hover i {
+    header .wrapper h1 {
+      color: orange;
+      font-size: 18px;
+      font-family: sans-serif;
+      float: left;
+      margin: 0;
+      height: 36px;
+      width: 75px;
+      background: url(../img/logo.png) no-repeat;
+      text-indent: -1000em; }
+    header .wrapper nav {
+      display: block;
+      float: left; }
+    header .wrapper .search {
+      padding: 0 18px;
+      width: 35%; }
+      header .wrapper .search form {
+        margin: 0; }
+        header .wrapper .search form input {
+          border: 1px solid #CFCBC8;
+          background: #f9f9f8;
+          padding: 6px 10px;
+          margin-left: 0;
+          height: 34px;
+          font-size: 14px;
+          float: left; }
+        header .wrapper .search form input[type="text"] {
+          width: 75%; }
+        header .wrapper .search form input[type="button"] {
+          width: 25%;
+          border: none;
+          padding: 7px 15px 8px;
+          background: #34A8C4;
+          color: #fff;
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+          font-weight: bold;
+          box-shadow: 0px 1px 1px rgba(128, 128, 128, 0.35); }
+    header .wrapper .categories ul {
+      display: none; }
+    header .wrapper .categories .btn {
+      color: #666666;
+      line-height: 18px; }
+      header .wrapper .categories .btn i {
         margin-left: 15px;
         color: #bbb; }
-  header .account {
-    float: right;
-    overflow: auto; }
-    header .account a {
-      float: left;
-      display: block;
-      margin-right: 15px;
-      text-decoration: none;
-      color: #0192B5;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      padding: 8px;
-      height: 35px; }
-    header .account .cart {
-      padding: 0;
-      margin: 0;
-      color: #666666;
-      font-size: 12px; }
-      header .account .cart i {
+      header .wrapper .categories .btn:hover {
+        background-color: #C8ECF1; }
+    header .wrapper .account {
+      float: right;
+      overflow: auto; }
+      header .wrapper .account a {
+        float: left;
         display: block;
-        font-size: 20px;
-        min-height: 24px; }
+        margin-right: 15px;
+        text-decoration: none;
+        color: #0192B5;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        padding: 8px;
+        height: 35px; }
+      header .wrapper .account .cart {
+        padding: 0;
+        margin: 0;
+        color: #666666;
+        font-size: 12px; }
+        header .wrapper .account .cart i {
+          display: block;
+          font-size: 20px;
+          min-height: 24px; }
 
 main {
   max-width: 68em;
