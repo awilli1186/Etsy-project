@@ -1,0 +1,15 @@
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #F5F5F1;
+}
+@import '../bower_components/font-awesome/css/font-awesome.min.css';
+@import 'bourbon/app/assets/stylesheets/bourbon.scss';
+@import 'neat/app/assets/stylesheets/neat.scss';
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';
+@import 'partials/buttons';
