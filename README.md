@@ -1,6 +1,6 @@
 # Etsy-clone
 
-- Group project for the Iron Yard. This project is too demonstrate hooking into the Etsy api.
+- Group project for the Iron Yard. This project is to demonstrate hooking into the Etsy api.
 - Also used Bourbon/Neat for the styling.
 
 - Demo instamgram clone created in class at The Iron Yard as an introduction to React.js.
